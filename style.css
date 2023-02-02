@@ -18,3 +18,44 @@
 }
 
 /* Add your styles below here*/
+
+
+.container
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 0.5em;
+  background-color: #434249;
+  border: 0.5em solid #434249;
+}
+
+.bg1,
+.bg2
+{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg1 div,
+.bg2 div
+{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #eee;
+  padding: 5px;
+  margin: 5px;
+}
+
+.container:hover .bg1:hover,
+.container:hover .bg2:hover
+{
+  transform: scale(1);
+  color: white;
+  border-radius: 50px;
+  box-shadow:  20px 20px 60px #0f0e0e,
+             -20px -20px 60px #151414;
+}
+
